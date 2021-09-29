@@ -22,7 +22,8 @@ final class EcdsaTest extends TestCase
 {
     use Keys;
 
-    private MultibyteStringConverter $pointsManipulator;
+    /** @var MultibyteStringConverter */
+    private $pointsManipulator;
 
     /** @before */
     public function createDependencies(): void

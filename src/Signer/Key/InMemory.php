@@ -13,8 +13,10 @@ use function is_string;
 
 final class InMemory implements Key
 {
-    private string $contents;
-    private string $passphrase;
+    /** @var string */
+    private $contents;
+    /** @var string */
+    private $passphrase;
 
     private function __construct(string $contents, string $passphrase)
     {

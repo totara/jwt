@@ -10,9 +10,12 @@ use function in_array;
 
 final class Plain implements UnencryptedToken
 {
-    private DataSet $headers;
-    private DataSet $claims;
-    private Signature $signature;
+    /** @var DataSet */
+    private $headers;
+    /** @var DataSet */
+    private $claims;
+    /** @var Signature */
+    private $signature;
 
     public function __construct(
         DataSet $headers,

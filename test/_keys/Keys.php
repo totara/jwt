@@ -9,13 +9,13 @@ use Lcobucci\JWT\Signer\Key\LocalFileReference;
 trait Keys
 {
     /** @var array<string, Key> */
-    protected static array $rsaKeys;
+    protected static $rsaKeys;
 
     /** @var array<string, Key> */
-    protected static array $ecdsaKeys;
+    protected static $ecdsaKeys;
 
     /** @var array<string, Key> */
-    protected static array $eddsaKeys;
+    protected static $eddsaKeys;
 
     /** @beforeClass */
     public static function createRsaKeys(): void

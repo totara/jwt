@@ -10,7 +10,8 @@ use function date_default_timezone_get;
 
 final class SystemClock implements Clock
 {
-    private DateTimeZone $timezone;
+    /** @var DateTimeZone */
+    private $timezone;
 
     public function __construct(DateTimeZone $timezone)
     {

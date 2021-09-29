@@ -9,7 +9,8 @@ use Lcobucci\JWT\Validation\ConstraintViolation;
 
 final class RelatedTo implements Constraint
 {
-    private string $subject;
+    /** @var string */
+    private $subject;
 
     public function __construct(string $subject)
     {

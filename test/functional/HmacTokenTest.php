@@ -41,7 +41,8 @@ use function tempnam;
  */
 class HmacTokenTest extends TestCase
 {
-    private Configuration $config;
+    /** @var Configuration */
+    private $config;
 
     /** @before */
     public function createConfiguration(): void

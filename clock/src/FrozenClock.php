@@ -8,7 +8,8 @@ use DateTimeZone;
 
 final class FrozenClock implements Clock
 {
-    private DateTimeImmutable $now;
+    /** @var DateTimeImmutable */
+    private $now;
 
     public function __construct(DateTimeImmutable $now)
     {
