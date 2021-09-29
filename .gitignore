@@ -6,3 +6,6 @@ phpcs.xml
 /.phpcs.cache
 /.phpunit.result.cache
 /build
+
+# Totara
+/.idea/
