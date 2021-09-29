@@ -22,8 +22,7 @@
         "ext-json": "*",
         "ext-mbstring": "*",
         "ext-openssl": "*",
-        "ext-sodium": "*",
-        "lcobucci/clock": "^2.0"
+        "ext-sodium": "*"
     },
     "require-dev": {
         "infection/infection": "^0.21",
@@ -44,7 +43,8 @@
     },
     "autoload": {
         "psr-4": {
-            "Lcobucci\\JWT\\": "src"
+            "Lcobucci\\JWT\\": "src",
+            "Lcobucci\\Clock\\": "clock/src"
         }
     },
     "autoload-dev": {
@@ -54,7 +54,8 @@
                 "test/unit",
                 "test/performance"
             ],
-            "Lcobucci\\JWT\\FunctionalTests\\": "test/functional"
+            "Lcobucci\\JWT\\FunctionalTests\\": "test/functional",
+            "Lcobucci\\Clock\\": "clock/test"
         }
     }
 }
