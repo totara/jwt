@@ -19,17 +19,22 @@ use Lcobucci\JWT\Validation\Constraint;
  */
 final class Configuration
 {
-    private Parser $parser;
-    private Signer $signer;
-    private Key $signingKey;
-    private Key $verificationKey;
-    private Validator $validator;
+    /** @var Parser */
+    private $parser;
+    /** @var Signer */
+    private $signer;
+    /** @var Key */
+    private $signingKey;
+    /** @var Key */
+    private $verificationKey;
+    /** @var Validator */
+    private $validator;
 
     /** @var Closure(ClaimsFormatter $claimFormatter): Builder */
-    private Closure $builderFactory;
+    private $builderFactory;
 
     /** @var Constraint[] */
-    private array $validationConstraints = [];
+    private $validationConstraints = [];
 
     private function __construct(
         Signer $signer,

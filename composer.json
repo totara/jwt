@@ -17,17 +17,15 @@
         }
     ],
     "require": {
-        "php": "^7.4 || ^8.0",
+        "php": ">=7.3 || ^8.0",
         "ext-hash": "*",
         "ext-json": "*",
         "ext-mbstring": "*",
         "ext-openssl": "*",
-        "ext-sodium": "*",
-        "lcobucci/clock": "^2.0"
+        "ext-sodium": "*"
     },
     "require-dev": {
-        "infection/infection": "^0.21",
-        "lcobucci/coding-standard": "^6.0",
+        "infection/infection": "^0.18",
         "mikey179/vfsstream": "^1.6.7",
         "phpbench/phpbench": "^1.0",
         "phpstan/extension-installer": "^1.0",
@@ -44,7 +42,8 @@
     },
     "autoload": {
         "psr-4": {
-            "Lcobucci\\JWT\\": "src"
+            "Lcobucci\\JWT\\": "src",
+            "Lcobucci\\Clock\\": "clock/src"
         }
     },
     "autoload-dev": {
@@ -54,7 +53,8 @@
                 "test/unit",
                 "test/performance"
             ],
-            "Lcobucci\\JWT\\FunctionalTests\\": "test/functional"
+            "Lcobucci\\JWT\\FunctionalTests\\": "test/functional",
+            "Lcobucci\\Clock\\": "clock/test"
         }
     }
 }

@@ -17,7 +17,8 @@ use const SODIUM_BASE64_VARIANT_URLSAFE_NO_PADDING;
 /** @coversDefaultClass \Lcobucci\JWT\SodiumBase64Polyfill */
 final class SodiumBase64PolyfillTest extends TestCase
 {
-    private string $testString;
+    /** @var string */
+    private $testString;
 
     protected function setUp(): void
     {

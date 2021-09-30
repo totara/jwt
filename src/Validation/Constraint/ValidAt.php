@@ -11,7 +11,8 @@ use Lcobucci\JWT\Validation\Constraint;
 /** @deprecated Use \Lcobucci\JWT\Validation\Constraint\LooseValidAt */
 final class ValidAt implements Constraint
 {
-    private LooseValidAt $constraint;
+    /** @var LooseValidAt */
+    private $constraint;
 
     public function __construct(Clock $clock, ?DateInterval $leeway = null)
     {

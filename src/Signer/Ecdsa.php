@@ -10,7 +10,8 @@ use const OPENSSL_KEYTYPE_EC;
 
 abstract class Ecdsa extends OpenSSL
 {
-    private SignatureConverter $converter;
+    /** @var SignatureConverter */
+    private $converter;
 
     public function __construct(SignatureConverter $converter)
     {

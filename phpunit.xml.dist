@@ -15,10 +15,15 @@
     <testsuites>
         <testsuite name="unit">
             <directory>test/unit</directory>
+            <directory>clock/test</directory>
         </testsuite>
 
         <testsuite name="functional">
             <directory>test/functional</directory>
+        </testsuite>
+
+        <testsuite name="clock">
+            <directory>clock/test</directory>
         </testsuite>
     </testsuites>
 

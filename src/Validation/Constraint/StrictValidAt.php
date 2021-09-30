@@ -13,8 +13,10 @@ use Lcobucci\JWT\Validation\ConstraintViolation;
 
 final class StrictValidAt implements Constraint
 {
-    private Clock $clock;
-    private DateInterval $leeway;
+    /** @var Clock */
+    private $clock;
+    /** @var DateInterval */
+    private $leeway;
 
     public function __construct(Clock $clock, ?DateInterval $leeway = null)
     {
